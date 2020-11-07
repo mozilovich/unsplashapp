@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/themePickGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:orientation="vertical"
+    tools:context=".presentation.ui.settings.SettingsFragment">
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/theme_light"
+        android:textAppearance="@style/Text.Medium" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/theme_dark"
+        android:textAppearance="@style/Text.Medium" />
+
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/theme_system"
+        android:textAppearance="@style/Text.Medium" />
+
+</RadioGroup>

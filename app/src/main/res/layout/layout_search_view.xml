@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    tools:background="@drawable/background_search"
+    tools:gravity="center_vertical"
+    tools:orientation="horizontal"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_search" />
+
+    <EditText
+        android:id="@+id/searchField"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:imeOptions="actionSearch"
+        android:background="@null"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/searchActionBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_voice" />
+</merge>

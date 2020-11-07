@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="Text" parent="TextAppearance.AppCompat"/>
+
+    <style name="Text.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="Text.Small.Primary">
+        <item name="android:textColor">@color/ds_text_primary</item>
+    </style>
+
+    <style name="Text.Small.Secondary">
+       <item name="android:textColor">@color/ds_text_secondary</item>
+    </style>
+
+    <style name="Text.Small.Primary.Header">
+        <item name="fontFamily">@font/font_medium</item>
+    </style>
+
+    <style name="Text.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="Text.Medium.Primary">
+        <item name="android:textColor">@color/ds_text_primary</item>
+    </style>
+
+    <style name="Text.Medium.Secondary">
+        <item name="android:textColor">@color/ds_text_secondary</item>
+    </style>
+
+    <style name="Text.Medium.Primary.Header">
+        <item name="fontFamily">@font/font_medium</item>
+    </style>
+
+    <style name="Text.Large">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/font_regular</item>
+    </style>
+
+    <style name="Text.Large.Primary">
+        <item name="android:textColor">@color/ds_text_primary</item>
+    </style>
+
+    <style name="Text.Large.Secondary">
+        <item name="android:textColor">@color/ds_text_secondary</item>
+    </style>
+
+    <style name="Text.Large.Primary.Header">
+        <item name="fontFamily">@font/font_medium</item>
+    </style>
+
+    <!-- Dialog -->
+
+
+</resources>

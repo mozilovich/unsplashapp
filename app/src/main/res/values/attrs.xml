@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolbar">
+        <attr name="enableNavBtn" format="boolean" />
+        <attr name="avatarSrc" format="reference" />
+        <attr name="toolbarTitle" format="string" />
+        <attr name="toolbarSubtitle" format="string" />
+        <attr name="enableSearch" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSearchView">
+        <attr name="searchHint" format="string" />
+        <attr name="searchText" format="string" />
+    </declare-styleable>
+</resources>

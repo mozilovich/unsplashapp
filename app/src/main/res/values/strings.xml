@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UnsplashApp</string>
+    <string name="loading_data">Загрузка данных</string>
+    <string name="loading_error">Ошибка при загрузке данных</string>
+    <string name="likes_text">Нравится: %d</string>
+    <string name="retry">Повторить</string>
+    <string name="settings">Настройки</string>
+    <string name="theme_settings">Настройка темы</string>
+    <string name="users">Пользователи</string>
+    <string name="images">Изображения</string>
+    <string name="image">Изображение</string>
+    <string name="images_search">Поиск изображений</string>
+    <string name="search">Поиск</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Темная</string>
+    <string name="theme_system">Системная</string>
+</resources>
