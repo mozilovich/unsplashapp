@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#ffffff</color>
+    <color name="colorSurface">#121212</color>
     <color name="ds_text_primary">#ffffff</color>
     <color name="ds_text_secondary">#939fad</color>
 </resources>

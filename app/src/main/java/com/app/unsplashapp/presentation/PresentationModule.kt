@@ -5,6 +5,8 @@ import com.app.unsplashapp.data.repository.images.ImagesRepository
 import com.app.unsplashapp.presentation.paging.ImagesPagingSource
 import com.app.unsplashapp.presentation.utils.image.ImageLoader
 import com.app.unsplashapp.presentation.utils.image.ImageLoaderImpl
+import com.app.unsplashapp.presentation.utils.themeanimation.ThemeAnimationHelper
+import com.app.unsplashapp.presentation.utils.themeanimation.ThemeAnimationHelperImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,4 +22,7 @@ class PresentationModule {
 
     @Provides
     fun provideImagesPagingSource(repository: ImagesRepository) = ImagesPagingSource(repository)
+
+    @Provides
+    fun provideThemeAnimationHelper(): ThemeAnimationHelper = ThemeAnimationHelperImpl()
 }

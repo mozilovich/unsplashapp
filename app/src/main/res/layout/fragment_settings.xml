@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/themePickGroup"
     android:layout_width="match_parent"
@@ -10,37 +9,22 @@
     tools:context=".presentation.ui.settings.SettingsFragment">
 
     <RadioButton
+        style="@style/ThemeSettingsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
-        android:background="?attr/selectableItemBackground"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="@string/theme_light"
-        android:textAppearance="@style/Text.Medium" />
+        android:text="@string/theme_light" />
 
     <RadioButton
+        style="@style/ThemeSettingsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
-        android:background="?attr/selectableItemBackground"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="@string/theme_dark"
-        android:textAppearance="@style/Text.Medium" />
+        android:text="@string/theme_dark" />
 
 
     <RadioButton
+        style="@style/ThemeSettingsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
-        android:background="?attr/selectableItemBackground"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:text="@string/theme_system"
-        android:textAppearance="@style/Text.Medium" />
+        android:text="@string/theme_system" />
 
 </RadioGroup>

@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
@@ -14,7 +14,7 @@
 
     <!-- Text -->
 
-    <style name="Text" parent="TextAppearance.AppCompat"/>
+    <style name="Text" parent="TextAppearance.AppCompat" />
 
     <style name="Text.Small">
         <item name="android:textSize">14sp</item>
@@ -26,7 +26,7 @@
     </style>
 
     <style name="Text.Small.Secondary">
-       <item name="android:textColor">@color/ds_text_secondary</item>
+        <item name="android:textColor">@color/ds_text_secondary</item>
     </style>
 
     <style name="Text.Small.Primary.Header">
@@ -67,7 +67,18 @@
         <item name="fontFamily">@font/font_medium</item>
     </style>
 
-    <!-- Dialog -->
+    <!-- RadioButton -->
 
+    <style name="ThemeSettingsButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:button">@null</item>
+        <item name="android:textAppearance">@style/Text.Medium.Primary</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:drawableRight">@drawable/btn_theme_settings</item>
+    </style>
 
 </resources>

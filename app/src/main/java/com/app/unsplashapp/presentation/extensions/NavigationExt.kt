@@ -155,14 +155,12 @@ fun BottomNavigationView.refreshCurrentTab(fragmentManager: FragmentManager) {
         R.id.navImages -> 1
         else -> 2
     }
-    val fragment = fragmentManager.findFragmentByTag(getFragmentTag(selectedIndex))
-    fragment?.let {
-        fragmentManager.beginTransaction().detach(fragment).commit()
+
+    fragmentManager.findFragmentByTag(getFragmentTag(selectedIndex))?.apply {
         fragmentManager.beginTransaction()
-            .attach(fragment)
-            .setPrimaryNavigationFragment(fragment)
-            .addToBackStack(getFragmentTag(0))
-            .setReorderingAllowed(true)
+            .detach(this)
+            .attach(this)
+            .setPrimaryNavigationFragment(this)
             .commit()
     }
 }
