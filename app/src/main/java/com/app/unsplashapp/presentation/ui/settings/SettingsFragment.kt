@@ -43,7 +43,6 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                     val selectedTheme = NightModeType.fromName(radioBtn.text.toString())
                     if (selectedTheme != oldTheme) {
                         lifecycleScope.launch {
-                            viewModel.changeTheme(selectedTheme)
                             if (requireContext().needRedrawScreens(oldTheme, selectedTheme)) {
                                 (activity as? MainActivity)?.apply {
                                     val location = IntArray(2)
@@ -51,9 +50,10 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                                     val locationX = it.width - requireContext().dpToPx(25)
                                     val locationY = location[1]
                                     themeAnimationHelper.showAnimation(locationX, locationY, this)
-                                    AppCompatDelegate.setDefaultNightMode(selectedTheme.value)
                                 }
                             }
+                            viewModel.changeTheme(selectedTheme)
+                            AppCompatDelegate.setDefaultNightMode(selectedTheme.value)
                         }
                     }
                 }
