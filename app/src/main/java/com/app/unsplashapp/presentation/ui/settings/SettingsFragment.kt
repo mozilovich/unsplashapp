@@ -49,11 +49,12 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                                     it.getLocationOnScreen(location)
                                     val locationX = it.width - requireContext().dpToPx(25)
                                     val locationY = location[1]
-                                    themeAnimationHelper.showAnimation(locationX, locationY, this)
+                                    themeAnimationHelper.showAnimation(locationX.toInt(), locationY, this)
                                 }
                             }
                             viewModel.changeTheme(selectedTheme)
                             AppCompatDelegate.setDefaultNightMode(selectedTheme.value)
+                            (activity as? MainActivity)?.refreshScreens()
                         }
                     }
                 }

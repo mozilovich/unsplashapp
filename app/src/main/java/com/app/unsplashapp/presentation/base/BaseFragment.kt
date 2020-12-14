@@ -24,7 +24,7 @@ abstract class BaseFragment(layoutId: Int) : Fragment(layoutId) {
         if (extraInfo != null) {
             findNavController().navigate(destination, extraInfo)
         } else {
-            findNavController().navigate(destination, extraInfo)
+            findNavController().navigate(destination)
         }
     }
 }

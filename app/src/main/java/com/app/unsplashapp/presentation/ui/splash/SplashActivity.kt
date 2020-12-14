@@ -6,9 +6,9 @@ import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
-import com.app.unsplashapp.presentation.ui.MainActivity
 import com.app.unsplashapp.R
 import com.app.unsplashapp.presentation.extensions.themeColor
+import com.app.unsplashapp.presentation.ui.MainActivity
 import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {

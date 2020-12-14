@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:titleTextAppearance="@style/Text.Large.Primary.Header" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"

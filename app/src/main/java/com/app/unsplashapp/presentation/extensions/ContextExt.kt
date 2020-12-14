@@ -32,10 +32,10 @@ fun Context.getSystemTheme(): NightModeType {
     }
 }
 
-fun Context.dpToPx(valueInDp: Int): Int {
+fun Context.dpToPx(valueInDp: Int): Float {
     return TypedValue.applyDimension(
         TypedValue.COMPLEX_UNIT_DIP,
         valueInDp.toFloat(),
         resources.displayMetrics
-    ).toInt()
+    )
 }
